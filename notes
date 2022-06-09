@@ -41,6 +41,7 @@ cd C:\xampp\htdocs
 
 composer create-project laravel/laravel cms --prefer-dist
 
+cd C:\xampp\htdocs\freeCodeGram\example-app
 
 
-
+composer require livewire/livewire laravel/framework
