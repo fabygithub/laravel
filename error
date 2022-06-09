@@ -1,0 +1,3 @@
+Your requirements could not be resolved to an installable set of packages.
+
+composer install --ignore-platform-reqs
