@@ -36,6 +36,10 @@ php storm.
 laravel new example-app
 
 6
+cmd
+cd C:\xampp\htdocs
+
+composer create-project laravel/laravel cms --prefer-dist
 
 
 
