@@ -8,3 +8,31 @@ the php framework
   
  7
  
+code . 
+env
+
+DB_DATABASE=resto_app
+create database resto_app
+php artisan migrate
+
+could not find driver (SQL: select * from information_schema.tables where tabl
+e_schema = resto_app and table_name = migrations and table_type = 'BASE TABLE')
+
+Artisan migrate could not find driver - Stack Overflow
+In your php.ini configuration file simply uncomment the extension:
+
+;extension=php_pdo_mysql.dll
+
+SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+Note: Make sure in .env you have add db_password and it is not null
+
+
+
+
+
+
+
+
+
+
