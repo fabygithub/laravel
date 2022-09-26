@@ -57,6 +57,9 @@ use App\Models\User;
 php artisan migrate:fresh --seed
 
 
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is admin' in 'field list'
+no existe la columna o esta mal escrita
+
 
 
 
