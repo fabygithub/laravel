@@ -28,6 +28,37 @@ SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password
 Note: Make sure in .env you have add db_password and it is not null
 
 laravel.com
+installation 
+starter kits
+
+composer require laravel/breeze --dev
+php artisan breeze:install
+
+databases
+migrations
+
+$table->string('is_admin')->default(false);
+$ php artisan make:seeder Admin
+
+seeder
+admin.php
+
+factory
+user factory.php
+
+// \App\Models\User::factory(10)->create();
+   $this->call(Admin::class);
+   
+$ php artisan migrate:fresh --seed
+use Illuminate\Support\Str;
+use App\Models\User;
+php artisan migrate:fresh --seed
+
+
+
+
+
+
 
 
 
