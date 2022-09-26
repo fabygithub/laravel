@@ -52,7 +52,11 @@ user factory.php
 $ php artisan migrate:fresh --seed
 use Illuminate\Support\Str;
 use App\Models\User;
+
+//sirve para actualizar
 php artisan migrate:fresh --seed
+
+
 
 
 
