@@ -27,6 +27,8 @@ SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password
 
 Note: Make sure in .env you have add db_password and it is not null
 
+laravel.com
+
 
 
 
