@@ -22,6 +22,7 @@ Artisan migrate could not find driver - Stack Overflow
 In your php.ini configuration file simply uncomment the extension:
 
 ;extension=php_pdo_mysql.dll
+o borrar el password en env
 
 SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
 
@@ -53,6 +54,47 @@ $ php artisan migrate:fresh --seed
 use Illuminate\Support\Str;
 use App\Models\User;
 
+log in
+
+password
+$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi
+
+laravel
+Whoops! Something went wrong.
+These credentials do not match our records.
+
+detener el servicio mysql
+
+SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+esto ocurre por mysql xamp no esta encendido
+
+SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+//revisar el nombre de adminitrador en mysql
+DB_USERNAME=Admin
+
+
+Laravel Config Cached
+false
+
+// activar el cache
+php artisan config:cache
+Laravel Config Cached
+true
+
+
+Whoops! Something went wrong.
+These credentials do not match our records.
+
+//Seeder already exists.
+php artisan make:seeder Admin
+
+// se instala 
+php artisan breeze:install
+
+// iniciar la pagina
+npm install && npm run dev
+
 //sirve para actualizar
 php artisan migrate:fresh --seed
 
@@ -60,9 +102,15 @@ php artisan migrate:fresh --seed
 SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is admin' in 'field list'
 no existe la columna o esta mal escrita
 
+How To Run A Laravel Project In The Browser
+php artisan serve
+http://127.0.0.1:8000
 
+Laravel serve getting ERR_CONNECTION_REFUSED on localhost
+php artisan serve --host=127.0.0.1
 
-
+//app url
+http://resto-app.test
 
 
 
