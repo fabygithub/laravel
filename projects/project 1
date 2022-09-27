@@ -86,18 +86,10 @@ true
 Whoops! Something went wrong.
 These credentials do not match our records.
 
-//Seeder already exists.
-php artisan make:seeder Admin
+
 
 // se instala 
 php artisan breeze:install
-
-// iniciar la pagina
-npm install && npm run dev
-
-//sirve para actualizar
-php artisan migrate:fresh --seed
-
 
 SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is admin' in 'field list'
 no existe la columna o esta mal escrita
@@ -109,8 +101,72 @@ http://127.0.0.1:8000
 Laravel serve getting ERR_CONNECTION_REFUSED on localhost
 php artisan serve --host=127.0.0.1
 
+https://es.stackoverflow.com/questions/267073/c%C3%B3mo-solucionar-problema-de-visualizaci%C3%B3n-de-proyecto-en-laravel
+hay que colocar public
+
+http://localhost/resto-app/public/resto-app/public/login
+
+SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
 //app url
 http://resto-app.test
+
+//carga en otro explorador microsoft edge
+http://127.0.0.1:5175/
+
+Your Laravel application's configured APP_URL is:
+http://resto-app.test
+
+Why it’s important to change APP_URL in Laravel .env file
+
+
+http://localhost/resto-app.test
+no se puede acceder a este sitio web laravel
+
+laravel DNS_PROBE_FINISHED_NXDOMAIN
+
+You don't have permission to access this resource.
+
+Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.6 Server at localhost Port 80
+http://localhost/http://resto-app.test/
+
+http://localhost/resto-app.test/
+use --host to expose
+
+your laravel application is configured app_url not found
+https://laracasts.com/discuss/channels/servers/i-got-dns-probe-finished-nxdomain-error-when-i-access-domain-through-laravel-valet?page=0&replyId=127483
+
+https://www.codegrepper.com/code-examples/whatever/DNS_PROBE_FINISHED_NXDOMAIN+laravel+project
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install
+
+
+// iniciar la pagina
+npm install && npm run dev
+
+// error en el codigo
+$table->boolean('is_admin')->default(false);
+
+//Seeder already exists.
+php artisan make:seeder Admin
+
+//sirve para actualizar
+php artisan migrate:fresh --seed
+
+
+//error de carga de pagina
+php artisan serve
+APP_URL=http://localhost:8000
+
+//These credentials do not match our records.
+significa que ese usuario no esta en la base de datos
+
+use Illuminate\Support\Facades\Hash;
+
+https://parzibyte.me/blog/2019/04/29/laravel-registrar-usuario-manualmente/
+
 
 
 
